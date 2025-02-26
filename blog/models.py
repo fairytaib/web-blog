@@ -30,4 +30,4 @@ class Comment(models.Model):
     )
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    approved = models.BooleanField()
+    approved = models.BooleanField(default=False)
